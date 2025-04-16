@@ -77,12 +77,11 @@ def blockTime(date, timevalue):
     wait = WebDriverWait(driver, 10)  # Wait up to 10 seconds
     search_link = wait.until(EC.element_to_be_clickable((By.ID, "reserve-court-search")))
     now = datetime.datetime.now().time()
-    target_time = datetime.time(18, 42, 0)
+    target_time = datetime.time(12, 00, 0)
 
     while True:
         now = datetime.datetime.now().time()
         if now >= target_time:
-            print(f"{now} is greater than {target_time}")
             search_link.click()
             break
         time.sleep(1)  # Check every second
@@ -105,4 +104,4 @@ def blockTime(date, timevalue):
 
 
 if __name__ == "__main__":
-    blockTime("04/18/2025", "2:30pm")
+    blockTime("04/25/2025", "5:30pm")
