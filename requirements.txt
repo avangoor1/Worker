@@ -1,5 +1,2 @@
 selenium
 webdriver-manager
-time
-datetime
-chromedriver-autoinstaller
