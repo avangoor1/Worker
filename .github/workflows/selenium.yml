@@ -2,7 +2,7 @@ name: Badminton Booking
 
 on:
   schedule:
-    - cron: '12 16 * * *'
+    - cron: '19 16 * * *'
 
 jobs:
   runs-script:
