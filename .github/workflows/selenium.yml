@@ -2,7 +2,7 @@ name: Badminton Booking
 
 on:
   schedule:
-    - cron: '27 16 * * *'
+    - cron: '32 16 * * *'
   workflow_dispatch:
 
 jobs:
