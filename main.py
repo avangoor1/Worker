@@ -78,7 +78,7 @@ def blockTime(date, timevalue):
     search_link = wait.until(EC.element_to_be_clickable((By.ID, "reserve-court-search")))
     now = datetime.datetime.now().time()
     print(now)
-    target_time = datetime.time(13, 30, 0)
+    target_time = datetime.time(13, 36, 0)
 
     while True:
         now = datetime.datetime.now().time()
