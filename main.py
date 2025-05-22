@@ -60,7 +60,7 @@ def blockTime(date, timevalue):
     location_link.click()
 
     wait = WebDriverWait(driver, 10)  # Wait up to 10 seconds
-    gym_link = wait.until(EC.element_to_be_clickable((By.XPATH, "//li[contains(text(), 'Badminton')]")))
+    gym_link = wait.until(EC.element_to_be_clickable((By.XPATH, "//li[contains(text(), 'Racquetball')]")))
     gym_link.click()
 
     time.sleep(2)
@@ -77,7 +77,7 @@ def blockTime(date, timevalue):
     wait = WebDriverWait(driver, 10)  # Wait up to 10 seconds
     search_link = wait.until(EC.element_to_be_clickable((By.ID, "reserve-court-search")))
     now = datetime.datetime.now().time()
-    target_time = datetime.time(12, 00, 0)
+    target_time = datetime.time(22, 44, 0)
 
     while True:
         now = datetime.datetime.now().time()
@@ -104,4 +104,4 @@ def blockTime(date, timevalue):
 
 
 if __name__ == "__main__":
-    blockTime("05/30/2025", "5:00pm")
+    blockTime("05/28/2025", "6:00pm")
